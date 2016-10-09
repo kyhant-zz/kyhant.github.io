@@ -6,11 +6,11 @@ import Portfolio from './portfolio'
 export default class App extends Component {
   render() {
     return (
-      <div>
-      	<NavBar />
-      	<Jumbo />
-      	<Portfolio />
-      </div>
+    	<div className='background'>
+	      	<NavBar />
+	      	<Jumbo />
+	      	<Portfolio />
+  		</div>
     )
   }
 }

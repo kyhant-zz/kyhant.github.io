@@ -1,16 +1,21 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  background-image: url('../images/background-2.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
 }
 
 .jumbotron {
-	background-image: url(../images.doge.jpg);
+	background: transparent !important;
 }
 
 .img-container {
 	max-width:100%;
 }
 
-/*.portfolio-img {
-	max-width: 50px;
+/*.background {
+	background-image: url('../images/background-2.jpg');
 }*/
