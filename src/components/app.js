@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import NavBar from './navbar';
+import Jumbo from './jumbo';
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
-    );
+      <div>
+      	<NavBar />
+      	<Jumbo />
+      </div>
+    )
   }
 }

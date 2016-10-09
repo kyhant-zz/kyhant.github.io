@@ -2,4 +2,4 @@
 
 ###A collection of my work###
 
-Check back for new additions.
+Check back for upcoming additions
