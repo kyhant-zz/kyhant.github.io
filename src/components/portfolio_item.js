@@ -6,17 +6,15 @@ class PortfolioItem extends Component {
 	}
 	render(){
 		return (
-			<div className="row">
 			  <div className="col-sm-6 col-md-4">
 			    <div className="thumbnail">
-			      <img src="..." alt="...">
+			      <img className="portfolio-img" src={this.props.img} alt="..."></img>
 			      <div className="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>...</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <h3>{this.props.title}</h3>
+			        <p>{this.props.description}</p>
+			        <p><a href={this.props.github} className="btn btn-primary" target="blank" role="button">GitHub</a> <a href={this.props.url} className="btn btn-default" target="blank" role="button">Website</a></p>
 			      </div>
 			    </div>
-			  </div>
 			</div>
 		)	
 	}

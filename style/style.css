@@ -2,3 +2,15 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+.jumbotron {
+	background-image: url(../images.doge.jpg);
+}
+
+.img-container {
+	max-width:100%;
+}
+
+/*.portfolio-img {
+	max-width: 50px;
+}*/
