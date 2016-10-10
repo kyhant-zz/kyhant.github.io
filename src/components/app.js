@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './navbar';
+import Contact from './contact';
 import Jumbo from './jumbo';
 import Portfolio from './portfolio';
 import About from './about';
@@ -27,6 +27,7 @@ export default class App extends Component {
   	if(this.state.selected === '') {
 	    return (
 	    	<div>
+	    			<Contact />
 		      	<Jumbo />
 	      		<div className="center">
 							<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
@@ -39,6 +40,7 @@ export default class App extends Component {
   	else if(this.state.selected === 'portfolio') {
   		return (
 	    	<div className='selected'>
+	    		<Contact />
 	      	<Jumbo />
       		<div className="center">
 						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
@@ -51,6 +53,7 @@ export default class App extends Component {
   	} else if(this.state.selected === 'about') {
   		return (
 	    	<div className='selected'>
+		    	<Contact />      	
 	      	<Jumbo />
       		<div className="center">
 						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>

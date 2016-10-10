@@ -12,7 +12,7 @@ class PortfolioItem extends Component {
 			      <div className="caption">
 			        <h3>{this.props.title}</h3>
 			        <p>{this.props.description}</p>
-			        <p><a href={this.props.github} className="btn btn-primary" target="blank" role="button">GitHub</a> <a href={this.props.url} className="btn btn-default" target="blank" role="button">Website</a></p>
+			        <p className='links'><a href={this.props.github} className="btn btn-default" target="blank" role="button"><i className="fa fa-lg fa-github"></i></a><a href={this.props.url} className="btn btn-primary" target="blank" role="button"><i className="fa fa-globe fa-lg"></i></a></p>
 			      </div>
 			    </div>
 			</div>

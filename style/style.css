@@ -46,6 +46,11 @@ body {
 	margin-right:0.2%;
 }
 
+.links a{
+	margin-left:0.2%;
+	margin-right:0.2%;
+}
+
 .about {
 	background-color: white;
 	border-radius: 4px;
@@ -59,7 +64,7 @@ body {
 
 .about-text img{
 	float:right;
-	max-width:40%;
+	max-width:35%;
 	padding: 20px;
 	border-radius:50%;
 }
@@ -72,8 +77,18 @@ body {
 
 .yoSoy {
 	margin-top:5%;
+	position:absolute;
 }
 
 .animated {
 	-webkit-animation-duration: .5s;
+}
+
+.contact {
+	text-align:center;
+	padding-top: .5%;
+	color: white;
+	font-size: 110%;
+	background-color:black;
+	padding-bottom: 10px;
 }
