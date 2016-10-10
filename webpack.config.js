@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: './src/index.js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [{
