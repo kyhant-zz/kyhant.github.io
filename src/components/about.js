@@ -15,7 +15,7 @@ class About extends Component {
 						</p>
 						<p>Software engineer with a strong JavaScript background and experience in a range of technologies from React and Angular to Node/Express and SQL/Mongo databases. 
 						</p>
-						<p>Software engineer with a strong JavaScript background and experience in a range of technologies from React and Angular to Node/Express and SQL/Mongo databases. 
+						<p>I built this website from scratch with React.js. 
 						</p>
 					</div>
 				</div>
