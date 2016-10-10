@@ -5,7 +5,7 @@ class Portfolio extends Component {
 	constructor(props){
 		super(props)
 		}
-		
+
 	render(){
 			return (
 				<div className='portfolio container'>
@@ -25,8 +25,7 @@ class Portfolio extends Component {
 						img='../../images/flashback.jpg'
 						title='Flashback'
 						description='this is what flashback did'
-						github='https://github.com/kyhant/flashback'
-						url='blank' />
+						github='https://github.com/kyhant/flashback' />
 					</div>
 			)
 		}

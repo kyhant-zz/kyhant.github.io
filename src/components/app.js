@@ -29,8 +29,8 @@ export default class App extends Component {
 	    	<div className='background'>
 		      	<Jumbo />
 	      		<div className="center">
-							<button className="btn btn-primary btn-lg center about" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-							<button className="btn btn-primary btn-lg center portfolio" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+							<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
+							<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
 	  				</div>
 	  		</div>
 	    )
@@ -40,8 +40,8 @@ export default class App extends Component {
 	    	<div className='background'>
 	      	<Jumbo />
       		<div className="center">
-						<button className="btn btn-primary btn-lg center about" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-						<button className="btn btn-primary btn-lg center portfolio" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
 	    		</div>
 	      	<Portfolio className='portfolio' selected={this.state.selected} />
 	  		</div>
@@ -51,10 +51,10 @@ export default class App extends Component {
 	    	<div className='background'>
 	      	<Jumbo />
       		<div className="center">
-						<button className="btn btn-primary btn-lg center about" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-						<button className="btn btn-primary btn-lg center portfolio" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
 	  			</div>
-  			<About selected={this.state.selected} />
+  				<About selected={this.state.selected}/>
 	  		</div>
   		)
   	}
