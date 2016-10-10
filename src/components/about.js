@@ -7,7 +7,7 @@ class About extends Component {
 	render(){
 		if(this.props.selected === 'about'){
 			return (
-				<div className="container about yoSoy">
+				<div className="container about yoSoy" id='about'>
 					<p>Software engineer with a strong JavaScript background and experience in a range of technologies from React and Angular to Node/Express and SQL/Mongo databases. </p>
 				</div>
 			)

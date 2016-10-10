@@ -3,6 +3,7 @@ import NavBar from './navbar';
 import Jumbo from './jumbo';
 import Portfolio from './portfolio';
 import About from './about';
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 export default class App extends Component {
 	constructor(props){
@@ -29,9 +30,10 @@ export default class App extends Component {
 	    	<div className='background'>
 		      	<Jumbo />
 	      		<div className="center">
-							<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-							<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+							<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
+							<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button></a>
 	  				</div>
+	  			<div id="bottom" />
 	  		</div>
 	    )
   	}
@@ -40,10 +42,11 @@ export default class App extends Component {
 	    	<div className='background'>
 	      	<Jumbo />
       		<div className="center">
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
+						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button></a>
 	    		</div>
 	      	<Portfolio className='portfolio' selected={this.state.selected} />
+  				<div id="bottom" />
 	  		</div>
   		)
   	} else if(this.state.selected === 'about') {
@@ -51,10 +54,11 @@ export default class App extends Component {
 	    	<div className='background'>
 	      	<Jumbo />
       		<div className="center">
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
+						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button></a>
 	  			</div>
   				<About selected={this.state.selected}/>
+  			  <div id="bottom" />	
 	  		</div>
   		)
   	}

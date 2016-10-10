@@ -10,18 +10,19 @@ body {
 
 .portfolio {
 	margin-top: 5%;
-	/*background-color:white;*/
-	overflow:visible;
-	padding-left:50%;
-	padding-right: 50%;
 }
 
 .jumbotron {
-	font-family: 'Rock Salt', cursive;
-	background: transparent !important;
-	color: white !important;
+	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Rock Salt', cursive;*/
+	background: transparent;
+	color: white;
 	text-align:center;
 	margin-top:15%;
+}
+
+.jumbotron h1 {
+	font-size: 625%;
 }
 
 .description {
@@ -35,7 +36,8 @@ body {
 .center {
 	margin-top:-3%;
 	text-align:center;
-	margin-left:1%;
+	margin-left:0.2%;
+	margin-right:0.2%;
 }
 
 .about {
@@ -45,12 +47,14 @@ body {
 
 .about button{
 	margin-top: 5%;
-	background-color: tan 
+	background-color: tan;
 
 }
 
 .center button {
 	width:200px;
+	/*font-family: 'Oswald', sans-serif;	*/
+	font-family: 'Montserrat', sans-serif;
 }
 
 .yoSoy {
