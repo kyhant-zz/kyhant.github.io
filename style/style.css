@@ -10,7 +10,10 @@ body {
 
 .portfolio {
 	margin-top: 5%;
-	background-color:white;
+	/*background-color:white;*/
+	overflow:visible;
+	padding-left:50%;
+	padding-right: 50%;
 }
 
 .jumbotron {
@@ -18,7 +21,7 @@ body {
 	background: transparent !important;
 	color: white !important;
 	text-align:center;
-	margin-top:10%;
+	margin-top:15%;
 }
 
 .description {
@@ -30,6 +33,7 @@ body {
 }
 
 .center {
-	margin-top:-2%;
+	margin-top:-3%;
 	text-align:center;
+	margin-left:1%;
 }

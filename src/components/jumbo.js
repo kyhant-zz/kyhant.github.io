@@ -10,7 +10,8 @@ class Jumbo extends Component {
 			<div className="jumbotron">
 				<div className="container">
 				  <h1>Kyhan Turner</h1>
-				  <p className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+				  <p className='description'>
+				  	Short stack pancake lover, full-stack software engineer
 					</p>
 			  </div>
 			</div>

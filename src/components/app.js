@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './navbar';
 import Jumbo from './jumbo';
-import Portfolio from './portfolio'
+import Portfolio from './portfolio';
+import About from './about';
 
 export default class App extends Component {
 	constructor(props){
