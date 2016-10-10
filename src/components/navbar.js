@@ -19,21 +19,17 @@ class NavBar extends Component {
 	        </div>
 	        <div id="navbar" className="navbar-collapse collapse">
 	          <form className="navbar-form navbar-right">
-	            <div className="form-group">
-	              <input type="text" placeholder="Email" className="form-control"></input>
-	            </div>
-
-	            <div className="form-group">
-	              <input type="password" placeholder="Password" className="form-control"></input>
-	            </div>
-	            <button type="submit" className="btn btn-success">Sign in</button>
+	            <ul className="nav navbar-nav">
+				        <li><a href="#">About</a></li>
+				        <li><a href="#">Portfolio</a></li>
+				        <li><a href="#">Contact</a></li>
+			        </ul>
 	          </form>
 	        </div>
 	      </div>
     	</nav>
 			)
 	}
-
 }
 
 export default NavBar

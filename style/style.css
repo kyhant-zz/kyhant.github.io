@@ -1,21 +1,35 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-  background-image: url('../images/background-2.jpg');
+  background-image: url('../images/background-4.jpg');
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 
+.portfolio {
+	margin-top: 5%;
+	background-color:white;
+}
+
 .jumbotron {
+	font-family: 'Rock Salt', cursive;
 	background: transparent !important;
+	color: white !important;
+	text-align:center;
+	margin-top:10%;
+}
+
+.description {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .img-container {
 	max-width:100%;
 }
 
-/*.background {
-	background-image: url('../images/background-2.jpg');
-}*/
+.center {
+	margin-top:-2%;
+	text-align:center;
+}
