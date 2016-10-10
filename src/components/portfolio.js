@@ -8,7 +8,7 @@ class Portfolio extends Component {
 
 	render(){
 			return (
-				<div className='portfolio container'>
+				<div className='portfolio container animated fadeInUp'>
 					<PortfolioItem
 						img='../../images/gitluv.jpg'
 						title='GitLuv'

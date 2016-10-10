@@ -3,7 +3,6 @@ import NavBar from './navbar';
 import Jumbo from './jumbo';
 import Portfolio from './portfolio';
 import About from './about';
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 export default class App extends Component {
 	constructor(props){
@@ -27,7 +26,7 @@ export default class App extends Component {
   render() {
   	if(this.state.selected === '') {
 	    return (
-	    	<div className='background'>
+	    	<div>
 		      	<Jumbo />
 	      		<div className="center">
 							<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
@@ -39,7 +38,7 @@ export default class App extends Component {
   	}
   	else if(this.state.selected === 'portfolio') {
   		return (
-	    	<div className='background'>
+	    	<div className='selected'>
 	      	<Jumbo />
       		<div className="center">
 						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
@@ -51,7 +50,7 @@ export default class App extends Component {
   		)
   	} else if(this.state.selected === 'about') {
   		return (
-	    	<div className='background'>
+	    	<div className='selected'>
 	      	<Jumbo />
       		<div className="center">
 						<a href='#bottom'><button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button></a>
