@@ -5,11 +5,13 @@ class About extends Component {
 		super(props)
 	}
 	render(){
-		return (
-			<div className="container">
-				this is some stuff that happens to be about me
-			</div>
-		)
+		if(this.props.selected === 'about'){
+			return (
+				<div className="container about yoSoy">
+					<p>Software engineer with a strong JavaScript background and experience in a range of technologies from React and Angular to Node/Express and SQL/Mongo databases. </p>
+				</div>
+			)
+		}
 	}
 }
 

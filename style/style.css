@@ -37,3 +37,22 @@ body {
 	text-align:center;
 	margin-left:1%;
 }
+
+.about {
+	background-color: white;
+	padding-left: 500px;
+}
+
+.about button{
+	margin-top: 5%;
+	background-color: tan 
+
+}
+
+.center button {
+	width:200px;
+}
+
+.yoSoy {
+	margin-top:5%;
+}
