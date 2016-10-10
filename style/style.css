@@ -52,22 +52,24 @@ body {
 }
 
 .about {
+	margin-top:5%;
 	background-color: white;
 	border-radius: 4px;
+	max-width: 90%;
 }
+
 .about-text {
-	/*padding-right: 50%;*/
-	/*float:left;*/
-	/*display:inline-block;*/
+	font-size: 125%;
 	vertical-align: middle;
 }
 
 .about-text img{
 	float:right;
-	max-width:35%;
+	max-width:300px;
 	padding: 20px;
 	border-radius:50%;
 }
+
 
 .center button {
 	width:200px;
@@ -75,13 +77,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.yoSoy {
-	margin-top:5%;
-	position:absolute;
-}
-
 .animated {
-	-webkit-animation-duration: .5s;
+	-webkit-animation-duration: .3s;
 }
 
 .contact {
@@ -91,4 +88,9 @@ body {
 	font-size: 110%;
 	background-color:black;
 	padding-bottom: 10px;
+}
+
+.contact a {
+	color:white;
+	text-decoration: none;
 }
