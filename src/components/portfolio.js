@@ -10,19 +10,19 @@ class Portfolio extends Component {
 			return (
 				<div className='portfolio container animated fadeIn'>
 					<PortfolioItem
-						img='../../images/gitluv.jpg'
+						img='../../style/images/gitluv.jpg'
 						title='GitLuv'
 						description='This was a project that did stuff'
 						github='https://github.com/Git-Luv/GitLuv'
 						url='http://www.gitluv.io/' />
 					<PortfolioItem
-						img='../../images/bpc.jpg'
+						img='../../style/images/bpc.jpg'
 						title='BPC'
 						description='This was a project that did things'
 						github='https://github.com/GoodNews-MKS-39/RockPaperScissors'
 						url='http://bearprincesscowboy.com/' />
 					<PortfolioItem
-						img='../../images/flashback.jpg'
+						img='../../style/images/flashback.jpg'
 						title='Flashback'
 						description='this is what flashback did'
 						github='https://github.com/kyhant/flashback' />
