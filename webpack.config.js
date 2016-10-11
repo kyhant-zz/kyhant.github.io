@@ -1,10 +1,12 @@
+var path = reauire('path');
+
 module.exports = {
   entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    publicPath: '/',
+    path: path.join(__dirname,'static'),
+    publicPath: '/static/',
     filename: 'bundle.js'
   },
   module: {
