@@ -5,6 +5,7 @@ class PortfolioItem extends Component {
 		super(props);
 	}
 	render(){
+		if(this.props.url){
 		return (
 		  <div className="col-sm-12 col-md-4">
 		    <div className="thumbnail">
@@ -17,7 +18,22 @@ class PortfolioItem extends Component {
 		      </div>
 		    </div>
 			</div>
-		)	
+		)}
+		else {
+			return (
+			  <div className="col-sm-12 col-md-4">
+			    <div className="thumbnail">
+			      <img className="portfolio-img" src={this.props.img} alt="..."></img>
+			      <div className="caption">
+			        <h3>{this.props.title}</h3>
+			        <p>{this.props.description}</p>
+			        <p><strong>Developed with: </strong>{this.props.stack}</p>
+			        <p className='links'><a href={this.props.github} className="btn btn-default" target="blank" role="button"><i className="fa fa-lg fa-github"></i></a></p>
+			      </div>
+			    </div>
+				</div>
+			)
+		}
 	}
 }
 
