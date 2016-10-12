@@ -9,9 +9,9 @@ class Jumbo extends Component {
 		return (
 			<div className="jumbotron">
 				<div className="container">
-				  <h1>KYHAN TURNER</h1>
+				  <h1>Kyhan Turner</h1>
 				  <p className='description'>
-				  	Short stack pancake lover, full-stack software engineer
+				  	{this.props.description}
 					</p>
 			  </div>
 			</div>
