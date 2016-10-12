@@ -15,7 +15,6 @@ body {
 }
 
 .jumbotron {
-	/*font-family: 'Oswald', sans-serif;*/
 	font-family: 'Rock Salt', cursive;
 	background: transparent;
 	color: white;
@@ -72,10 +71,8 @@ body {
 	margin-top:-2%;
 }
 
-
 .center button {
 	width:200px;
-	/*font-family: 'Oswald', sans-serif;	*/
 	font-family: 'Montserrat', sans-serif;
 }
 

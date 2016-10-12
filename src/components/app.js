@@ -25,12 +25,12 @@ export default class App extends Component {
   	if(this.state.selected === '') {
 	    return (
 	    	<div>
-	    			<Contact />
-		      	<Jumbo description="Short stack pancake lover, full-stack software engineer" />
-	      		<div className="center">
-							<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-							<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
-	  				</div>
+    			<Contact />
+	      	<Jumbo description="Short stack pancake lover, full-stack software engineer" />
+      		<div className="center">
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+  				</div>
 	  			<div id="bottom" />
 	  		</div>
 	    )
