@@ -12,7 +12,7 @@ class About extends Component {
 						<p><img className='about-portrait' src='../../style/images/kyhan_portrait.png' />
 						</p>
 						<p>
-							Software engineer with experience in front and back end development using a variety of acronyms to get the job done. I believe in user-centered design and finding the most efficient and scalable means of getting there.
+							Software engineer with experience in front and back end development using a variety of acronyms. I believe in user-centered design and finding the most efficient and scalable means of getting there.
 						</p>
 						<p>
 							There's no substitute for intellectual curiosity, and in this profession it's mandatory. I'm always looking to grow my understanding of technologies I've used and exploring those I haven't.
