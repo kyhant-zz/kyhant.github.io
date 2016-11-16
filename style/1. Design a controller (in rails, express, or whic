@@ -1,0 +1,39 @@
+1. Design a controller (in rails, express, or whichever framework you like) that manages a singly linked list. The interface should allow re-ordering a list, removing an item from a list, and adding an item to the beginning of the list.
+
+var express = require('express');
+
+exports.reOrder = function(){}
+exports.removeItem = function(val){}
+exports.addItem = function(val){
+	  const temp = this.head;
+    
+    this.head.value = val;
+    this.head.next = temp;
+}
+
+2. Design a SQL database schema for an ecommerce product that can have multiple colors and sizes (e.g. blue small, blue medium, blue large, red small, ...), quantities for each available option, and the sizes can be pre-arranged by the user (e.g blues first then reds, or smalls first then mediums). Bonus points for validations and checks on the database to ensure the data inserted is valid.
+
+
+CREATE DATABASE ecommerce;
+
+CREATE TABLE product 
+( 
+	id int PRIMARY KEY,
+	item_name varchar(50) NOT NULL UNIQUE,
+	count int CHECK (count >= 0)
+);
+
+CREATE TABLE options 
+(
+	color varchar(50) NOT NULL,
+	size varchar(50) NOT NULL,
+	FOREIGN KEY (item_id) REFERENCES product
+	CONSTRAINT chk_id CHECK (item_id > 0)
+);
+
+SELECT count(*)
+FROM options
+WHERE color = ' '
+GROUP BY color, size;
+
+3. The first solution has a 'count' column to express the amt in inventory in a normalized way. The product to options relationship is many-to-many since there can be multiple products with the same options variation, and multiple options will apply to any one product. Another way to design this schema would be to have one table with item_id, item_name, size, color, and count columns. This would make db queries simpler than the first option while still representing the data in a normalized fashion. 
