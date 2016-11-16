@@ -20092,6 +20092,7 @@
 						description: 'Collaboration platform to match qualified developers with independent product owners.',
 						stack: 'React.js, Node.js, Express, MongoDB, and Mongoose.',
 						github: 'https://github.com/Git-Luv/GitLuv',
+						disabled: '',
 						url: 'http://www.gitluv.io/' }),
 					_react2.default.createElement(_portfolio_item2.default, {
 						img: '../../style/images/bpc.jpg',
@@ -20099,12 +20100,14 @@
 						description: 'Re-implementation of a rock-paper-scissors app with chat, challenge and rematch features.',
 						stack: 'React.js, Socket.io, Node.js, Express and MongoDB.',
 						github: 'https://github.com/GoodNews-MKS-39/RockPaperScissors',
+						disabled: '',
 						url: 'http://bearprincesscowboy.com/' }),
 					_react2.default.createElement(_portfolio_item2.default, {
 						img: '../../style/images/flashback.jpg',
 						title: 'Flashback',
 						description: 'Search any date back to the 1860\'s, explore the top headlines of the day in the New York Times.',
 						stack: 'React.js, Bootstrap, New York Times API.',
+						disabled: 'disabled',
 						github: 'https://github.com/kyhant/flashback' })
 				);
 			}
@@ -20151,98 +20154,53 @@
 		_createClass(PortfolioItem, [{
 			key: "render",
 			value: function render() {
-				if (this.props.url) {
-					return _react2.default.createElement(
+				return _react2.default.createElement(
+					"div",
+					{ className: "col-sm-12 col-md-4" },
+					_react2.default.createElement(
 						"div",
-						{ className: "col-sm-12 col-md-4" },
+						{ className: "thumbnail" },
+						_react2.default.createElement("img", { className: "portfolio-img", src: this.props.img, alt: "..." }),
 						_react2.default.createElement(
 							"div",
-							{ className: "thumbnail" },
-							_react2.default.createElement("img", { className: "portfolio-img", src: this.props.img, alt: "..." }),
+							{ className: "caption" },
 							_react2.default.createElement(
-								"div",
-								{ className: "caption" },
+								"h3",
+								null,
+								this.props.title
+							),
+							_react2.default.createElement(
+								"p",
+								null,
+								this.props.description
+							),
+							_react2.default.createElement(
+								"p",
+								null,
 								_react2.default.createElement(
-									"h3",
+									"strong",
 									null,
-									this.props.title
+									"Developed with: "
+								),
+								this.props.stack
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "links" },
+								_react2.default.createElement(
+									"a",
+									{ href: this.props.github, className: "btn btn-default", target: "blank", role: "button" },
+									_react2.default.createElement("i", { className: "fa fa-lg fa-github" })
 								),
 								_react2.default.createElement(
-									"p",
-									null,
-									this.props.description
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									_react2.default.createElement(
-										"strong",
-										null,
-										"Developed with: "
-									),
-									this.props.stack
-								),
-								_react2.default.createElement(
-									"p",
-									{ className: "links" },
-									_react2.default.createElement(
-										"a",
-										{ href: this.props.github, className: "btn btn-default", target: "blank", role: "button" },
-										_react2.default.createElement("i", { className: "fa fa-lg fa-github" })
-									),
-									_react2.default.createElement(
-										"a",
-										{ href: this.props.url, className: "btn btn-primary", target: "blank", role: "button" },
-										_react2.default.createElement("i", { className: "fa fa-globe fa-lg" })
-									)
+									"a",
+									{ href: this.props.url, className: "btn btn-primary", disabled: this.props.disabled, target: "blank", role: "button" },
+									_react2.default.createElement("i", { className: "fa fa-globe fa-lg" })
 								)
 							)
 						)
-					);
-				} else {
-					return _react2.default.createElement(
-						"div",
-						{ className: "col-sm-12 col-md-4" },
-						_react2.default.createElement(
-							"div",
-							{ className: "thumbnail" },
-							_react2.default.createElement("img", { className: "portfolio-img", src: this.props.img, alt: "..." }),
-							_react2.default.createElement(
-								"div",
-								{ className: "caption" },
-								_react2.default.createElement(
-									"h3",
-									null,
-									this.props.title
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									this.props.description
-								),
-								_react2.default.createElement(
-									"p",
-									null,
-									_react2.default.createElement(
-										"strong",
-										null,
-										"Developed with: "
-									),
-									this.props.stack
-								),
-								_react2.default.createElement(
-									"p",
-									{ className: "links" },
-									_react2.default.createElement(
-										"a",
-										{ href: this.props.github, className: "btn btn-default", target: "blank", role: "button" },
-										_react2.default.createElement("i", { className: "fa fa-lg fa-github" })
-									)
-								)
-							)
-						)
-					);
-				}
+					)
+				);
 			}
 		}]);
 
