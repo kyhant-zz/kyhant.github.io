@@ -20272,11 +20272,6 @@
 								null,
 								'Motorcycle enthusiast, amateur solo traveler, mediocre musician. Lets talk about sharks.'
 							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'This site was built by me for you with React.js.'
-							),
 							_react2.default.createElement('hr', null),
 							_react2.default.createElement(
 								'p',
