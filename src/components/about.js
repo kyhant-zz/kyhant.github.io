@@ -20,8 +20,6 @@ class About extends Component {
 						<p>
 							Motorcycle enthusiast, amateur solo traveler, mediocre musician. Lets talk about sharks.
 						</p>
-						<p>This site was built by me for you with React.js. 
-						</p>
 						<hr />
 							<p>What I'm reading:</p>
 						<div className='reading'>
