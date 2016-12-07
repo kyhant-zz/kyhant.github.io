@@ -19847,7 +19847,7 @@
 							_react2.default.createElement(
 								'button',
 								{ className: 'btn btn-primary btn-lg center', onClick: this.handleChangePortfolio.bind(this) },
-								'Portfolio'
+								'Recent Work'
 							)
 						),
 						_react2.default.createElement('div', { id: 'bottom' })
@@ -19882,7 +19882,7 @@
 							_react2.default.createElement(
 								'button',
 								{ className: 'btn btn-primary btn-lg center', onClick: this.handleChangePortfolio.bind(this) },
-								'Portfolio'
+								'Recent Work'
 							)
 						),
 						_react2.default.createElement(_about2.default, { selected: this.state.selected }),

@@ -29,7 +29,7 @@ export default class App extends Component {
 	      	<Jumbo description="Short stack pancake lover, full-stack software engineer" />
       		<div className="center">
 						<button className="btn btn-primary btn-lg center" onClick={this.handleChangeAbout.bind(this)} role="button">About</button>
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Recent Work</button>
   				</div>
 	  			<div id="bottom" />
 	  		</div>
@@ -53,7 +53,7 @@ export default class App extends Component {
 		    	<Contact />      	
 	      	<Jumbo />
       		<div className="center">
-						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Portfolio</button>
+						<button className="btn btn-primary btn-lg center" onClick={this.handleChangePortfolio.bind(this)}>Recent Work</button>
 	  			</div>
   				<About selected={this.state.selected}/>
   			  <div id="bottom" />	
